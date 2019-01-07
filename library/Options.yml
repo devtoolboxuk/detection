@@ -1,0 +1,26 @@
+Detection:
+  Rules:
+    Bots:
+      active: 1
+      score: 20
+      params: 'sensu'
+    Html:
+      active: 1
+      score: 31
+      params: ''
+    Numeric:
+      active: 1
+      score: 40
+      params: ''
+    Url:
+      active: 1
+      score: 52
+      params: ''
+    DisposableEmail:
+      active: 1
+      score: 7
+      params: ''
+    InvalidEmail:
+      active: 1
+      score: 7
+      params: ''

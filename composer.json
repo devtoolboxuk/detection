@@ -1,0 +1,32 @@
+{
+  "name": "aegis/detection",
+  "description": "Detection system. Part of AEGIS ",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "": "library/",
+      "aegis\\detection\\": "library/"
+    },
+    "classmap": [
+      "library"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Rob Wilson",
+      "email": "rob@dev-toolbox.co.uk"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "devtoolboxuk/ip-address": "^1.0.0",
+    "mattketmo/email-checker": "dev-master"
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  }
+}
