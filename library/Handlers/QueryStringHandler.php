@@ -1,9 +1,9 @@
 <?php
 
-namespace aegis\detection\Handlers;
+namespace dolos\detection\Handlers;
 
-use aegis\detection\Wrappers\QueryStringKeyWrapper;
-use aegis\detection\Wrappers\QueryStringValueWrapper;
+use dolos\detection\Wrappers\QueryStringKeyWrapper;
+use dolos\detection\Wrappers\QueryStringValueWrapper;
 
 class QueryStringHandler extends Handler
 {

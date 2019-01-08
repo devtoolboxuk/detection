@@ -1,5 +1,6 @@
 # Detection
-Part of A.E.G.I.S. (_Advanced E-Commerce Gateway and Ingress Service_)
+
+Still under development
 
 ## Table of Contents
 
@@ -10,6 +11,11 @@ Part of A.E.G.I.S. (_Advanced E-Commerce Gateway and Ingress Service_)
 
 ## Background
 
+Dolos - Greek God of Deception
+
+The detection system detects attempts to decept (see what I did there) and returns a result. Each item can be given a score, and if multiple elements are matched, a total score is calculated. Of course you may only want to get back a boolean value to return if its found, so it does that too
+
+Part of A.E.G.I.S. (_Advanced E-Commerce Gateway and Ingress Service_)
 
 
 ## Usage

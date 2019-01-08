@@ -1,6 +1,6 @@
 <?php
 
-namespace aegis\detection;
+namespace dolos\detection;
 
 /**
  * @method static Detection detect()

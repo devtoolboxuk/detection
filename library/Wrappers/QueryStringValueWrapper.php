@@ -1,6 +1,6 @@
 <?php
 
-namespace aegis\detection\Wrappers;
+namespace dolos\detection\Wrappers;
 
 class QueryStringValueWrapper extends Wrapper
 {

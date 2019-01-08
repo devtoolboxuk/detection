@@ -1,8 +1,8 @@
 <?php
 
-namespace aegis\detection\classes;
+namespace dolos\detection\classes;
 
-use aegis\detection\handlers\Handler;
+use dolos\detection\handlers\Handler;
 
 class Detect extends AbstractDetection
 {

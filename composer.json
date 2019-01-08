@@ -1,12 +1,12 @@
 {
-  "name": "aegis/detection",
+  "name": "dolos/detection",
   "description": "Detection system. Part of AEGIS ",
   "type": "library",
   "license": "MIT",
   "autoload": {
     "psr-4": {
       "": "library/",
-      "aegis\\detection\\": "library/"
+      "dolos\\detection\\": "library/"
     },
     "classmap": [
       "library"

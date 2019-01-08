@@ -1,8 +1,8 @@
 <?php
 
-namespace aegis\detection\Handlers;
+namespace dolos\detection\Handlers;
 
-use aegis\detection\Wrappers\BotWrapper;
+use dolos\detection\Wrappers\BotWrapper;
 
 class BotsHandler extends Handler
 {

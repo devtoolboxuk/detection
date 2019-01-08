@@ -1,13 +1,13 @@
 <?php
 
-namespace aegis\detection;
+namespace dolos\detection;
 
 use ReflectionClass;
 
 class Factory
 {
     protected $rulePrefixes = [
-        'aegis\\detection\\classes\\',
+        'dolos\\detection\\classes\\',
     ];
 
     public function build($ruleName, $options = [])

@@ -1,8 +1,6 @@
 <?php
 
-namespace devtoolboxuk\aegis\Wrappers\Detection;
-
-namespace aegis\detection\Wrappers;
+namespace dolos\detection\Wrappers;
 
 class SecurityWrapper extends Wrapper
 {
@@ -11,7 +9,6 @@ class SecurityWrapper extends Wrapper
 
     private $reg_SQL = "/(drop|insert|md5|select|union)/i";
     private $reg_EVAL = "/(eval\()/i";
-
 
     public function process()
     {

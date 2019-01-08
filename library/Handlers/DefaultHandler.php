@@ -1,6 +1,6 @@
 <?php
 
-namespace aegis\detection\Handlers;
+namespace dolos\detection\Handlers;
 
 class DefaultHandler extends Handler
 {

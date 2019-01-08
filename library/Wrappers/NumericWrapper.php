@@ -1,6 +1,6 @@
 <?php
 
-namespace devtoolboxuk\aegis\Wrappers;
+namespace dolos\detection\Wrappers;
 
 class NumericWrapper extends Wrapper
 {

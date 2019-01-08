@@ -1,6 +1,6 @@
 <?php
 
-namespace aegis\detection\classes;
+namespace dolos\detection\classes;
 
 abstract class AbstractDetection
 {
@@ -14,7 +14,6 @@ abstract class AbstractDetection
 
     protected $model;
 
-    protected $resultType = 'json';
 
     public function __construct($options = [])
     {
@@ -45,19 +44,11 @@ abstract class AbstractDetection
 
     public function getResult()
     {
-        switch ($this->resultType) {
-            case 'boolean':
-                return ($this->score > 0) ? true : false;
-                break;
-            case 'json':
-                return json_encode($this->result);
-                break;
-        }
+        return json_encode($this->result);
     }
 
     public function check()
     {
-
         foreach ($this->handlers as $handler) {
             array_unshift($this->references, ['name' => $handler->getName(), 'value' => $handler->getValue()]);
             $this->processWrappers($handler);
