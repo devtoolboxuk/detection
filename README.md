@@ -31,8 +31,7 @@ require 'vendor/autoload.php';
 ```
 
 ```sh
-use aegis/detection;
-
+use dolos/detection;
 ```
 
 
