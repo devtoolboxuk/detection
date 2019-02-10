@@ -5,7 +5,6 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "": "library/",
       "dolos\\detection\\": "library/"
     },
     "classmap": [
@@ -21,7 +20,7 @@
   "minimum-stability": "dev",
   "require": {
     "devtoolboxuk/ip-address": "^1.0.0",
-    "mattketmo/email-checker": "dev-master"
+    "mattketmo/email-checker": "~v1.5.5"
   },
   "scripts": {
     "test": "./vendor/bin/phpunit"
