@@ -17,7 +17,7 @@
       "email": "rob@dev-toolbox.co.uk"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "dev-master",
   "require": {
     "devtoolboxuk/ip-address": "^1.0.0",
     "mattketmo/email-checker": "~v1.5.5"
