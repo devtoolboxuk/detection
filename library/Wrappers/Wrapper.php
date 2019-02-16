@@ -9,7 +9,7 @@ abstract class Wrapper
     private $results = [];
     private $score = 0;
     private $realScore = 0;
-    private $params;
+    private $params = [];
     private $name;
     private $active;
     private $reference;
@@ -44,6 +44,12 @@ abstract class Wrapper
         $this->options = $options;
         return $this;
     }
+
+    function sanitizeReference()
+    {
+        return str_replace(" ","",strip_tags(trim($this->getReference())));
+    }
+
 
     function getReference()
     {

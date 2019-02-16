@@ -32,3 +32,15 @@ Detection:
       active: 1
       score: 1
       params: ''
+    DifferentCountry:
+      active: 1
+      score: 33
+      params: ''
+    Country:
+      active: 1
+      score: 32
+      params: 'deu'
+    Zip:
+      active: 1
+      score: 32
+      params: ''
