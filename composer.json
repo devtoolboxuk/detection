@@ -19,7 +19,6 @@
   ],
     "minimum-stability": "dev",
   "require": {
-    "devtoolboxuk/ip-address": "^1.0.0",
     "mattketmo/email-checker": "~v1.5.5"
   },
   "scripts": {

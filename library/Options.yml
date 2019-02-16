@@ -40,6 +40,10 @@ Detection:
       active: 1
       score: 32
       params: 'deu'
+    Security:
+      active: 1
+      score: 42
+      params: ''
     Zip:
       active: 1
       score: 32
