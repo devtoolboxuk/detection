@@ -2,7 +2,7 @@
 
 namespace dolos\detection\Handlers;
 
-use dolos\detection\Wrappers\CountryWrapper;
+use dolos\detection\Wrappers\ZipWrapper;
 
 class ZipHandler extends Handler
 {
@@ -10,6 +10,6 @@ class ZipHandler extends Handler
     {
         parent::__construct($value);
         $this->setName(str_replace(__NAMESPACE__ . '\\', '', __CLASS__));
-        $this->pushWrapper(new CountryWrapper());
+        $this->pushWrapper(new ZipWrapper());
     }
 }

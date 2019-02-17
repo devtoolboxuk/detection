@@ -34,17 +34,17 @@ Detection:
       params: ''
     DifferentCountry:
       active: 1
-      score: 33
+      score: 10
       params: ''
     Country:
       active: 1
-      score: 32
-      params: 'deu'
+      score: 10
+      params: ''
     Security:
       active: 1
-      score: 42
+      score: 10
       params: ''
     Zip:
       active: 1
-      score: 32
+      score: 10
       params: ''

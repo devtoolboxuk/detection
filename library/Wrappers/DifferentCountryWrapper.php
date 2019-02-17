@@ -13,7 +13,6 @@ class DifferentCountryWrapper extends Wrapper
             $this->setScore($this->getRealScore());
             $this->setResult();
         }
-
     }
 
     private function setLocalName()

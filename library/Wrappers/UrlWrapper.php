@@ -15,7 +15,6 @@ class UrlWrapper extends Wrapper
             $this->setScore($this->getRealScore());
             $this->setResult();
         }
-
     }
 
     private function setLocalName()
@@ -23,6 +22,4 @@ class UrlWrapper extends Wrapper
         $name = str_replace(__NAMESPACE__ . '\\', '', __CLASS__);
         return str_replace('Wrapper', '', $name);
     }
-
-
 }

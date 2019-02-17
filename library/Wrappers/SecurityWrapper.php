@@ -121,7 +121,6 @@ class SecurityWrapper extends Wrapper
                 $this->active = 1;
             }
         }
-
     }
 
 }

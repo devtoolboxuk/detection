@@ -8,11 +8,13 @@ namespace dolos\detection;
 class Detection
 {
     protected static $factory;
-    protected static $options;
+    protected static $options = null;
 
     function __construct()
     {
-        static::setOptions();
+        if (!static::$options) {
+            static::setOptions();
+        }
     }
 
     /**
@@ -23,14 +25,30 @@ class Detection
     {
 
         $basic_options = yaml_parse_file(__DIR__ . '/Options.yml');
-        $options = array_merge($options, $basic_options);
+        $options = static::arrayMergeRecursiveDistinct($basic_options, $options);
 
         if ($file != '') {
             $other_options = yaml_parse_file($file);
-            $options = array_merge($options, $other_options);
+            $options = static::arrayMergeRecursiveDistinct($other_options, $options);
+        }
+        
+        static::$options = $options;
+    }
+
+    private static function arrayMergeRecursiveDistinct($merged, $array2 = [])
+    {
+        if (empty($array2)) {
+            return $merged;
         }
 
-        static::$options = $options;
+        foreach ($array2 as $key => &$value) {
+            if (is_array($value) && isset($merged[$key]) && is_array($merged[$key])) {
+                $merged[$key] = static::arrayMergeRecursiveDistinct($merged[$key], $value);
+            } else {
+                $merged[$key] = $value;
+            }
+        }
+        return $merged;
     }
 
     /**
